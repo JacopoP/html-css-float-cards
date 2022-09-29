@@ -14,15 +14,68 @@ header{
     font-family: 'Fredoka', sans-serif;
     color: #E53170;
     text-align: center;
-    margin: 15px 0 0;
+    margin: 20px 0 0;
     font-size: 30px;
 }
 
+/* center the content */
 #container{
     width: 70%;
-    margin: 30px auto 0;
+    margin: 40px auto 0;
 }
 
-#container > p{
+/* p style */
+p{
     text-align: center;
 }
+
+/* clearfix */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cards-row{
+    margin-top: 35px;
+    /* DEBUG */
+    /* background-color: blueviolet;
+    min-height: 50px; */
+}
+
+/* cars rules */
+.card{
+    float: left;
+    background-color: #0F0E17;
+    color: #fff;
+    width: calc((100% - 60px) / 3);
+    margin-left: 30px;
+}
+
+.card:first-child{
+    margin-left: 0;
+}
+
+/* img rules */
+.card img{
+    height: 110px;
+    float: left;
+}
+
+/* info rules */
+.gen-info{
+    float: left;
+    margin: 3px 10px;
+    line-height: calc(100px / 3);
+    font-size: 18px;
+}
+
+.gen-info h4{
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+}
+
+.gen-info a{
+    text-decoration: none;
+}
+
